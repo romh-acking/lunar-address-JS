@@ -9,7 +9,7 @@ export function PcToSnes(PcAddress) {
     else
     {
         IsValidPcAddress = true;
-        SnesAddress = 0xC13 + PcAddress;
+        SnesAddress = PcAddress - 0xC13 + 0x7E0000;
     }
     
     return [SnesAddress, IsValidPcAddress];
