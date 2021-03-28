@@ -13,6 +13,10 @@ https://romh-acking.github.io/lunar-address-JS/
 * /lib/autodetect.js: Contains logic to identify a rom's memory map type.
 * /lib/conversion/: Contains multiple JavaScipt files for the address conversions.
 
+## Special Thanks
+* Klarth: Guidance, bug testing
+* Tipiak75: Bug testing
+
 ## References
 * https://github.com/sanderdebr/react-usereducer-context-tutorial/ (dark mode example)
 * https://www.youtube.com/watch?v=CVnSrLZ_HaQ (snackbar)
