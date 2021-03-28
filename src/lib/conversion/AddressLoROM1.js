@@ -2,7 +2,7 @@ export function PcToSnes(PcAddress) {
     let SnesAddress = 0;
     let IsValidPcAddress;
 
-    if (PcAddress > 0x700000)
+    if (PcAddress >= 0x400000)
     {
         IsValidPcAddress = false;
     }

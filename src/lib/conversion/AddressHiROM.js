@@ -2,7 +2,7 @@ export function PcToSnes(PcAddress) {
     let SnesAddress = 0;
     let IsValidPcAddress;
 
-    if (PcAddress >= 0xC00000)
+    if (PcAddress >= 0x400000)
     {
         IsValidPcAddress = false;
     }
@@ -20,12 +20,12 @@ export function SnesToPc(SnesAddress) {
 
     if ((SnesAddress >= 0xC00000 && SnesAddress <= 0xFFFFFF))
     {
-        IsValidPcAddress = false;
+        IsValidPcAddress = true;
+        PcAddress = (SnesAddress & 0x3FFFFF);
     }
     else
     {
-        IsValidPcAddress = true;
-        PcAddress = (SnesAddress & 0x3FFFFF);
+        IsValidPcAddress = false;
     }
 
     return [PcAddress, IsValidPcAddress];

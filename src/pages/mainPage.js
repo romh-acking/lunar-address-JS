@@ -54,7 +54,7 @@ const useStyles = makeStyles((theme) => ({
 const romTypesDropdownItems = [
   { id: romType.LoROM1, label: 'LoROM: 00:8000 - 6F:FFFF' },
   { id: romType.LoROM2, label: 'LoROM: 80:8000 - FF:FFFF' },
-  { id: romType.HiROM, label: 'HiROM: C0:8000 - FF:FFFF' },
+  { id: romType.HiROM, label: 'HiROM: C0:0000 - FF:FFFF' },
   { id: romType.ExLoROM, label: 'ExLoROM: 80:8000 - FF:FFFF & 00:8000 - 7D:FFFF' },
   { id: romType.ExHiROM, label: 'ExHiROM: C0:0000 - FF:FFFF & 40:0000 - 7D:FFFF' },
   { id: romType.RAM, label: 'RAM: 7E:0000 - 7F:FFFF' },
