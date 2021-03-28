@@ -11,7 +11,7 @@ export function autodetect(romData_) {
 
     if (romData.length < 0x10000){
         identifiedRomType = romType.Invalid;
-        return romType
+        return identifiedRomType;
     }
 
     Position = 0x7FDC;
@@ -28,7 +28,7 @@ export function autodetect(romData_) {
         if ((ReadUInt16() ^ ReadUInt16()) !== 0xFFFF)
         {
             identifiedRomType = romType.Invalid;
-            return romType;
+            return identifiedRomType;
         }
         Position = 0xFFD5;
         ptr = ReadByte();
