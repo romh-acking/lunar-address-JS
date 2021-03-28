@@ -4,7 +4,7 @@ import Brightness7Icon from "@material-ui/icons/Brightness7";
 import React, { useEffect, useState } from 'react';
 import { useThemeDispatch } from "../context/theme/context";
 import { useThemeState } from "../context/theme";
-
+import IconButton from '@material-ui/core/IconButton';
 import TextField from '@material-ui/core/TextField';
 import { useDispatch } from "react-redux";
 import { setSnackbar } from "../context/snackbar/snackbar";
@@ -32,7 +32,7 @@ import {
 
 } from "../lib/localStorage"
 
-import AlertDialog from "./abouModal"
+import AlertDialog from "./aboutModal"
 
 const useStyles = makeStyles((theme) => ({
   formControl: {
@@ -295,9 +295,11 @@ export default function Users() {
               <Grid item>
                 <AlertDialog />
               </Grid>
-
-              <Grid item onClick={_toggleTheme}>
-                {theme === "light" ? <Brightness7Icon /> : <Brightness4Icon />}
+              
+              <Grid item>
+                <IconButton onClick={_toggleTheme}>
+                { theme === "light" ? <Brightness7Icon /> : <Brightness4Icon /> }
+                </IconButton>
               </Grid>
             </Grid>
           </Grid>

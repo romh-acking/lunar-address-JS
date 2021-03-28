@@ -12,13 +12,16 @@ import { useThemeState } from "./context/theme";
 export const light = {
   palette: {
     type: "light",
-  },
+  }
 };
 
 export const dark = {
   palette: {
     type: "dark",
-  },
+    primary: {
+      main: '#7289da'
+    }
+  }
 };
 
 export default function Layout({ children }) {
