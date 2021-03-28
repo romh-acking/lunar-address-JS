@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/lunar-address-JS/static/js/main.340528db.chunk.js",
-    "main.js.map": "/lunar-address-JS/static/js/main.340528db.chunk.js.map",
+    "main.js": "/lunar-address-JS/static/js/main.beab0f9a.chunk.js",
+    "main.js.map": "/lunar-address-JS/static/js/main.beab0f9a.chunk.js.map",
     "runtime-main.js": "/lunar-address-JS/static/js/runtime-main.c1f19ad6.js",
     "runtime-main.js.map": "/lunar-address-JS/static/js/runtime-main.c1f19ad6.js.map",
     "static/js/2.e1d11774.chunk.js": "/lunar-address-JS/static/js/2.e1d11774.chunk.js",
@@ -12,6 +12,6 @@
   "entrypoints": [
     "static/js/runtime-main.c1f19ad6.js",
     "static/js/2.e1d11774.chunk.js",
-    "static/js/main.340528db.chunk.js"
+    "static/js/main.beab0f9a.chunk.js"
   ]
 }
