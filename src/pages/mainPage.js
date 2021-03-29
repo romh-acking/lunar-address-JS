@@ -115,7 +115,7 @@ export default function Users() {
             setSnackbar(
               true,
               "error",
-              "Invalid rom type"
+              "Invalid rom type:"
             )
           )
           return;

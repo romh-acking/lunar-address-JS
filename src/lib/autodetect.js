@@ -23,7 +23,7 @@ export function autodetect(romData_) {
     }
     else
     {
-        Position = 0xFFDE;
+        Position = 0xFFDC;
 
         if ((ReadUInt16() ^ ReadUInt16()) !== 0xFFFF)
         {
@@ -50,7 +50,7 @@ export function autodetect(romData_) {
         }
         else
         {
-            identifiedRomType = romType.HiROM;
+            identifiedRomType = romType.ExHiROM;
         }
     }
     else if (romData.length <= 0x400000)
