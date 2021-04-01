@@ -1,5 +1,7 @@
 # Lunar Address JS
 
+![picture](screenshot.png)
+
 ## About
 This is a JavaScript port of [Lunar Address](https://www.romhacking.net/utilities/26/) and was made with the ReactJS framework. All settings are stored in local storage for persistence.
 
