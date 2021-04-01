@@ -36,11 +36,11 @@ export function autodetect(romData_) {
 
     if ((ptr & 0xF) === 5)
     {
-        identifiedRomType = romType.ExLoROM;
+        identifiedRomType = romType.ExHiROM;
     }
     else if ((ptr & 0xF) === 3)
     {
-        identifiedRomType = romType.ExHiROM;
+        identifiedRomType = romType.HiROM;
     }
     else if ((ptr & 1) === 1)
     {
